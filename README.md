@@ -3,13 +3,11 @@
 ### Quick start
 - Requirements: Node 18+, PostgreSQL
 - Env vars (defaults shown):
-  - `DATABASE_URL=postgres://postgres:1234@localhost:5432/ticketdb`
-  - `JWT_SECRET` (defaults to legacy sample key)
   - `FRONTEND_ORIGIN=http://localhost:5173`
-  - `PORT=3000`
+  - `PORT=5288`
 - Install & run:
   - `npm install`
-  - `npm run dev` (ts-node-dev) or `npm run build && npm start`
+  - `npm run dev`
 
 ### API
 - `POST /api/auth/login` → sets `access_token` HTTP-only cookie (mock login by default).
@@ -31,4 +29,3 @@ Connect to the same host/port; events broadcast to all clients:
 
 ### Notes
 - Database schema and seed data are created automatically on start (`src/db/seed.ts`).
-- Legacy .NET files remain in the repo for reference but are no longer used by the Node runtime.
